@@ -306,7 +306,7 @@ We will build a network as provided by the IBM Blockchain Platform [documentatio
 * #### Create the channel
   - Navigate to the <b>Channels</b> tab in the left navigation.
   - Click <b>Create channel</b>.
-  - Give the channel a name, `mychannel`.
+  - Give the channel a name, `channel1`.
   - Select the orderer you created, `Orderer` from the orderers drop-down list.
   - Select the MSP identifying the organization of the channel creator from the drop-down list. This should be `Org1 MSP (org1msp)`.
   - Associate available identity as `Org1 Admin`.
@@ -323,7 +323,7 @@ We will build a network as provided by the IBM Blockchain Platform [documentatio
 * #### Join your peer to the channel
   - Click <b>Join channel</b> to launch the side panels.
   - Select your `Orderer` and click <b>Next</b>.
-  - Enter the name of the channel you just created. `mychannel` and click <b>Next</b>.
+  - Enter the name of the channel you just created. `channel1` and click <b>Next</b>.
   - Select which peers you want to join the channel, click `Peer Org1` .
   - Click <b>Submit</b>.
 
@@ -350,7 +350,7 @@ We will build a network as provided by the IBM Blockchain Platform [documentatio
 
 * #### Instantiate smart contract
   - On the smart contracts tab, find the smart contract from the list installed on your peers and click <b>Instantiate</b> from the overflow menu on the right side of the row.
-  - On the side panel that opens, select the channel, `mychannel` to instantiate the smart contract on. Click <b>Next</b>.
+  - On the side panel that opens, select the channel, `channel1` to instantiate the smart contract on. Click <b>Next</b>.
   - Select the organization members to be included in the policy, `org1msp`.  Click <b>Next</b>.
   - Give <b>Function name</b> of `init` and leave <b>Arguments</b> blank.
   - Click <b>Instantiate</b>.

@@ -1,9 +1,9 @@
 {
-  "connection_file": "connection.json",
-  "appAdmin": "admin",
-  "appAdminSecret": "adminpw",
+  "connection_file": "ibpConnection.json",
+  "appAdmin": "app-admin1",
+  "appAdminSecret": "app-admin1pw",
   "orgMSPID": "org1msp",
-  "caName": "ca.org1.example.com",
+  "caName": "ibpv2-org1ca-ca.blockchain-ocp311-cluster-7ec5d722a0ab3f463fdc90eeb94dbc70-0001.us-south.containers.appdomain.cloud:443",
   "userName": "user1",
-  "gatewayDiscovery": { "enabled": true, "asLocalhost": true }
+  "gatewayDiscovery": { "enabled": true, "asLocalhost": false }
 }

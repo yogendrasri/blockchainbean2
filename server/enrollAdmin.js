@@ -8,17 +8,18 @@ const FabricCAServices = require('fabric-ca-client');
 const { FileSystemWallet, X509WalletMixin } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
-
+console.log("********1*******");
 // capture network variables from config.json
 const configPath = path.join(process.cwd(), 'config.json');
 const configJSON = fs.readFileSync(configPath, 'utf8');
 const config = JSON.parse(configJSON);
+console.log("********1*******");
 var connection_file = config.connection_file;
 var appAdmin = config.appAdmin;
 var appAdminSecret = config.appAdminSecret;
 var orgMSPID = config.orgMSPID;
 var caName = config.caName;
-
+console.log("caName"+caName);
 const ccpPath = path.join(process.cwd(), connection_file);
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 const ccp = JSON.parse(ccpJSON);
